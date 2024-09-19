@@ -1,3 +1,5 @@
+// Endringene og beskrivelse fra "feil" kode står i kommentarene over/rundt/mellom/her/og/der koden.
+
 const double pi = 3.141592;
 
 class Circle
