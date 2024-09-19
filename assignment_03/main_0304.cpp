@@ -2,6 +2,7 @@
 #include <string>
 #include <algorithm>
 #include <cctype>
+
 using namespace std;
 
 string to_lowercase(const string& str) {

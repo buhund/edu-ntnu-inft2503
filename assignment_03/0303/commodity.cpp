@@ -1,4 +1,5 @@
 #include "commodity.hpp"
+
 using namespace std;
 
 Commodity::Commodity(const string& name_, int id_, double price_)
