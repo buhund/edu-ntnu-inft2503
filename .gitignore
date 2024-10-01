@@ -52,3 +52,57 @@ cmake-build-*/
 *.tmp
 *.old
 
+# Kubuntu / Linux system files
+.cache/
+.config/
+.local/
+*.kate-swp
+*.kde-cache
+
+# Ubuntu specific files
+.snap/
+.vscode-server/
+.cache/
+.local/share/recently-used.xbel
+.local/share/gvfs-metadata/
+gvfs.log
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.apdisk
+
+# Rust generated files
+*.rlib
+*.lock
+Cargo.lock
+target/
+
+# Rust tool specific
+.rustup/
+.cargo/
+
+# Rust Rover specific files
+.idea/
+target/
+*.iml
+*.ipr
+*.iws
+
+# System file backups (for all environments)
+*~
+*.swp
+*.swo
+*.bak
+*.orig
+*.tmp
+*.old
+*.lock
