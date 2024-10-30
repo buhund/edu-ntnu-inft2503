@@ -1,6 +1,5 @@
 #include "fraction.hpp"
 #include <iostream>
-#include <cmath>
 
 Fraction::Fraction() : numerator(0), denominator(1) {}
 
@@ -14,7 +13,7 @@ void Fraction::set(int numerator_, int denominator_) {
         denominator = denominator_;
         reduce();
     } else {
-        throw "nevneren ble null";
+        throw "nevneren ble null. ";
     }
 }
 
@@ -37,7 +36,7 @@ Fraction Fraction::operator-(int value) const {
     return fraction;
 }
 
-// Non-member function: int - Fraction
+// Non-member function: int minus Fraction
 Fraction operator-(int value, const Fraction &fraction) {
     Fraction result;
     result.set(value * fraction.denominator - fraction.numerator, fraction.denominator);

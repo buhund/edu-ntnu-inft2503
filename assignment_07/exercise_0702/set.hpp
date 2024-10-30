@@ -1,15 +1,15 @@
 #pragma once
 #include <vector>
 #include <iostream>
-#include <algorithm>
+
 using namespace std;
 
 class Set {
 public:
-    // Konstruktør: Lager en tom mengde.
+    // Constructor: Lager en tom mengde.
     Set() = default;
 
-    // Konstruktør: Lager en mengde med tall.
+    // Constructor: Lager en mengde med tall.
     Set(const std::vector<int> &elements);
 
     // Legg til et element i mengden, hvis det ikke allerede finnes.
@@ -18,7 +18,7 @@ public:
     // Union: Overload for operator+ for å lage unionen av to mengder.
     Set operator+(const Set &other) const;
 
-    // Tilordningsoperator: Setter en mengde lik en annen.
+    // Tilordning: Setter en mengde lik en annen.
     Set &operator=(const Set &other);
 
     // Overload for operator<< for å skrive ut mengden.

@@ -1,7 +1,9 @@
 #include "set.hpp"
+#include <algorithm>
+
 using namespace std;
 
-// Konstruktør: Lage en mengde med tall.
+// Constructor: Lage en mengde med tall.
 Set::Set(const std::vector<int> &elements) {
     for (int element : elements) {
         add(element);  // Bruker add() for å unngå duplikater.
